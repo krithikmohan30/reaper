@@ -2,6 +2,10 @@
 
 Static reachability engine for JS/TS repos. Finds what ESLint can't: orphan files, dead exports, ghost dependencies.
 
+## Demo
+
+![REAPER scan demo](demo.gif)
+
 ## Why this solves a real problem
 
 JS/TS repos accumulate `export function ...` that nothing imports, `src/` files nothing reaches, and `package.json` deps with 0 imports. This bloats bundles, slows CI, widens security surface.
