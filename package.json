@@ -1,0 +1,29 @@
+{
+  "name": "reaper",
+  "version": "0.1.0",
+  "description": "Dependency Bloat & Dead-Code CLI — static reachability engine for JS/TS repos",
+  "type": "module",
+  "bin": {
+    "reaper": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "scan": "node dist/index.js scan",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "ora": "^8.1.0",
+    "picocolors": "^1.1.1",
+    "ts-morph": "^23.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.3"
+  }
+}
